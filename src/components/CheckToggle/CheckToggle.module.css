@@ -1,0 +1,32 @@
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: var(--primary-color);
+  color: var(--secondary-text-color);
+}
+.YesButton {
+  padding: 5px 25px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px 0px 0px 5px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.NoButton {
+  padding: 5px 25px;
+  border: 1px solid var(--primary-color);
+  border-radius: 0px 5px 5px 0px;
+  color: var(--primary-color);
+  border-left: none;
+  cursor: pointer;
+}
+
+.CheckContainer {
+  margin: 12px 0px;
+}
+.disabled {
+    color: grey;
+    border-color: grey;
+    cursor: default;
+  }
